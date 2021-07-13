@@ -6,6 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
+ 
+<meta name="theme-color" content="#4285f4"></meta>
     <App />
   </React.StrictMode>,
   document.getElementById("root")

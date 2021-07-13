@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
+import ReactLogo from "../../Assets/back.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -11,8 +12,12 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about">
-      <Container>
+    
+      <div class="zstack">
+      <bg>
+       <img src={ReactLogo} bg={{zIndex: 0, top:0}} class='cover'/>
+       </bg>
+       <Container fluid className="home-about-section" id="about">
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
@@ -109,7 +114,8 @@ function Home2() {
           </Col>
         </Row>
       </Container>
-    </Container>
+      </div>
+    
   );
 }
 export default Home2;
